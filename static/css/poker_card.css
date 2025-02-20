@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*initial css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*poker card*/
+
+.poker_card_body{
+	height: 150px;
+	width: 100px;
+	padding-top: 20px;
+}
+
+.poker_card_players{
+	height: 150px;
+	width: 100px;
+}
+
+button{
+	display: inline-block;
+    border: none;
+	padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.poker_card{
+	height: 148px;
+	width: 100px;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	border: solid 1px black;
+
+}
+
+.num_suit{
+	height: auto;
+	width: 20px;
+	background-color: white;
+}
+
+.num{
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	padding: 2.5px;
+}
+
+.suit{
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	background-position: center;
+	background-size: 20px 20px;
+}
+
+.up{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.down{
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Safari prior 9.0 */
+	transform: rotate(180deg); /* Standard syntax */
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.mid_suit{
+	height: 68px;
+	background-color: white;
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	right: 20px;
+	background-position: center;
+	background-size: 60px 68px;
+}
